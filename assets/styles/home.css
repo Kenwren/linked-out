@@ -1,0 +1,407 @@
+@charset "utf-8";
+
+@import url(./reset.css);
+
+.container {
+    width: min(100% - 30px, 1280px);
+    margin-inline: auto;
+}
+
+/* ---------------Header style-------------- */
+/* ----------------------------------------- */
+
+main {
+    background-color: #eaedf1;
+}
+
+header {
+    height: 91px;
+    line-height: 91px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+.heading a {
+    color: #258C95;
+    font-size: 42px;
+    font-weight: 600;
+    margin-top: 28px;
+    margin-left: 21px;
+    font-family: "Dancing Script", cursive;
+}
+
+header input {
+    background: url(../img/search-12.png) no-repeat;
+    background-position: 15px;
+    background-color: #eaedf1;
+    height: 56px;
+    width: 350px;
+    border-radius: 30px;
+    padding: 0px 20px 0px 42px;
+    margin-left: 34px;
+}
+
+
+.header-icon {
+    position: relative;
+    top: 38px;
+    left: 66px;
+    color: rgb(0 0 0 /0.3);
+}
+
+.links-2 li {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    background-color: #eaedf1;
+    border-radius: 50%;
+}
+
+.links-2 a {
+    display: block;
+    color: #258C95;
+}
+
+.links-2 li+li {
+    margin-left: 15px;
+}
+
+.links-2 img {
+    border-radius: 50%;
+}
+
+.links-2 i {
+    font-size: 18px;
+}
+
+/* ------------------Main style---------------- */
+/* -------------------------------------------- */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+/* First column */
+
+.my-profile {
+    background-color: #fff;
+    text-align: center;
+    padding: 30px 0px;
+    border-radius: 6px;
+    height: 530.8px;
+}
+
+.my-profile img {
+    display: inline;
+    border-radius: 50%;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.my-info-1 p:nth-child(3) {
+    color: #727272;
+}
+
+.my-info-1 a {
+    color: #727272;
+    display: flex;
+    justify-content: center;
+    transition: all 0.25s ease-in-out;
+    margin-top: 10px;
+}
+
+.my-info-1 a:hover {
+    color: #2a2a2a;
+}
+
+.my-info-1 i {
+    color: #258C95;
+    line-height: 1.5;
+}
+
+.followers {
+    display: grid;
+    margin: 30px 0px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.followers div {
+    padding: 20px 0px;
+}
+
+.followers div:first-child,
+.followers div:nth-child(2) {
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.followers div:nth-child(2) {
+    border-left: 1px solid #d8d8d8;
+}
+
+.followers h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.followers p {
+    font-size: 14px;
+    color: #727272;
+}
+
+.my-profile>p {
+    margin-bottom: 16px;
+    color: #727272;
+}
+
+.my-profile > button {
+    padding: 15px 30px;
+    background-color: #258C95;
+    color: #fff;
+    border-radius: 28px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.my-profile>button:hover {
+    background-color: #258C95;
+}
+
+/* Second column */
+
+.friends-post,
+.post-here {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.post-here :first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-container {
+    padding-bottom: 10px;
+}
+
+.post-container i {
+    color: #258C95;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.post-container img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.post-here input {
+    width: 80%;
+    line-height: 1;
+}
+
+.line-break {
+    border-top: 1px solid #d8d8d8;
+    margin-bottom: 20px;
+}
+
+.post-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-options div {
+    cursor: pointer;
+}
+
+.post-options div:not(.line-break) {
+    display: flex;
+    align-items: center;
+}
+
+.post-options i {
+    margin-right: 6px;
+    font-size: 24px;
+}
+
+.post-options p {
+    color: #505050;
+}
+
+.live-video i {
+    color: #f02849;
+}
+
+.photo i {
+    color: #45bd62;
+}
+
+.feeling {
+    color: #fab921;
+}
+
+.post-heading img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.post-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.heading-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.post-heading p,
+.post-heading i {
+    color: #727272;
+}
+
+.post-heading i {
+    cursor: pointer;
+}
+
+.post-heading h3 {
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.post-content p {
+    margin-bottom: 15px;
+}
+
+.post-content div {
+    margin-top: 15px;
+}
+
+.post-content a {
+    color: #727272;
+    transition: all 0.25s ease-in-out;
+}
+
+.post-content a:hover {
+    color: #2a2a2a;
+}
+
+.post-content a + a {
+    margin-left: 20px;
+}
+
+.post-content i {
+    margin-right: 2px;
+}
+
+/* Third Column */
+
+.suggestions {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 0px 20px;
+    height: 690px;
+}
+
+.suggestions h2 {
+    text-align: center;
+    padding: 26px 0px;
+    line-height: 1.05;
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.people-container {
+    display: flex;
+    padding: 10px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.people-container > div {
+    display: flex;
+    align-items: center;
+}
+
+.people-container img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.people-container a {
+    margin-right: 10px;
+}
+
+.people-container h3 {
+    cursor: pointer;
+}
+
+.people-container p {
+    font-size: 12px;
+    color: #727272;
+}
+
+.people-container i {
+    color: #258C95;
+    cursor: pointer;
+}
+
+/* ------------------Main style---------------- */
+/* -------------------------------------------- */
+
+footer nav {
+    padding: 60px 0px 30px 0px;
+    background-color: #eaedf1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer nav li + li {
+    margin-left: 20px;
+}
+
+footer ul {
+    margin-bottom: 20px;
+}
+
+footer nav a,
+footer nav p {
+    color: #727272;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+footer nav a:hover {
+    color: #258C95;
+}
