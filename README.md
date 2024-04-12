@@ -1,6 +1,7 @@
 # linked-out
 This is a fake social network made primarily to make use of the random user API.
 
+## Credits and collaboration in this project
 Ive worked with Manpreet Dhillon to make this project.
 
 ## Login details needed are:
